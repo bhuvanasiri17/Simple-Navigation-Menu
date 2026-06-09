@@ -1,0 +1,330 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+}
+
+/* NAVIGATION */
+
+nav{
+
+    position:fixed;
+
+    width:100%;
+
+    top:0;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 50px;
+
+    background:
+    linear-gradient(
+    135deg,
+    #6C63FF,
+    #8B5CF6,
+    #EC4899
+    );
+
+    z-index:1000;
+}
+
+.logo{
+
+    color:white;
+
+    font-size:28px;
+
+    font-weight:700;
+}
+
+nav ul{
+
+    list-style:none;
+
+    display:flex;
+
+    gap:25px;
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:0.3s;
+}
+
+nav a:hover{
+
+    color:#ffe600;
+}
+
+/* HERO */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    color:white;
+
+    background:
+    linear-gradient(
+    135deg,
+    #6C63FF,
+    #8B5CF6,
+    #EC4899
+    );
+}
+
+.hero h1{
+
+    font-size:4rem;
+
+    margin-bottom:20px;
+}
+
+.hero p{
+
+    max-width:700px;
+
+    font-size:1.2rem;
+
+    margin-bottom:25px;
+}
+
+.btn{
+
+    text-decoration:none;
+
+    background:white;
+
+    color:#6C63FF;
+
+    padding:12px 25px;
+
+    border-radius:30px;
+
+    font-weight:bold;
+}
+
+/* SECTIONS */
+
+section{
+
+    padding:120px 60px;
+}
+
+section h2{
+
+    color:#6C63FF;
+
+    margin-bottom:20px;
+}
+
+#about{
+
+    background:#f8fafc;
+}
+
+#places{
+
+    background:#eef2ff;
+}
+
+#culture{
+
+    background:#fdf2f8;
+}
+
+#food{
+
+    background:#ecfeff;
+}
+
+#contact{
+
+    background:#f8fafc;
+}
+
+/* CARDS */
+
+.cards{
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    margin-top:30px;
+}
+
+.card{
+
+    background:white;
+
+    flex:1;
+
+    min-width:250px;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.1);
+
+    transition:0.3s;
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+}
+
+.card a{
+
+    display:inline-block;
+
+    margin-top:15px;
+
+    text-decoration:none;
+
+    color:#EC4899;
+
+    font-weight:bold;
+}
+
+/* FOOD LINKS */
+
+#food ul{
+
+    margin-left:20px;
+}
+
+#food li{
+
+    margin:12px 0;
+}
+
+#food a{
+
+    text-decoration:none;
+
+    color:#6C63FF;
+
+    font-weight:600;
+}
+
+#food a:hover{
+
+    color:#EC4899;
+}
+
+/* CONTACT */
+
+#contact p{
+
+    margin:15px 0;
+}
+
+#contact a{
+
+    text-decoration:none;
+
+    color:#6C63FF;
+
+    font-weight:600;
+}
+
+/* BACK TO TOP */
+
+.top-link{
+
+    text-align:center;
+
+    padding:30px;
+}
+
+.top-link a{
+
+    text-decoration:none;
+
+    color:#6C63FF;
+
+    font-weight:bold;
+}
+
+/* FOOTER */
+
+footer{
+
+    text-align:center;
+
+    padding:25px;
+
+    color:white;
+
+    background:
+    linear-gradient(
+    135deg,
+    #6C63FF,
+    #8B5CF6,
+    #EC4899
+    );
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    nav{
+
+        flex-direction:column;
+
+        gap:15px;
+    }
+
+    nav ul{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+    }
+
+    .hero h1{
+
+        font-size:2.5rem;
+    }
+
+    section{
+
+        padding:100px 25px;
+    }
+}
